@@ -51,7 +51,7 @@
       <div class="post-header">
         <h2 class="grap--h2"><?php $this->title() ?></h2>
          <div class="block-postMetaWrap">
-          <img src="//finer04-cos.b0.upaiyun.com/me.jpeg">
+          <?php echo $this->author->gravatar(32);?>
           <time><?php $this->date('F j, Y'); ?></time>
           </div>
     </div>

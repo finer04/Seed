@@ -12,4 +12,3 @@
 - SmoothScroll
 - 完善原主题的一些问题
 
-最近在学习 Bootstrap ，可能会对整体样式进行重改

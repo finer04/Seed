@@ -6,16 +6,6 @@
         <?php echo 'Page loading used ',timer_stop(), 's';?> 
     </footer>
 
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?ee8372abfc6239695bdfa92e2fce535e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 </div>
 
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
