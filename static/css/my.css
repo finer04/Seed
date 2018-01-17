@@ -257,9 +257,3 @@ body {
 	-webkit-animation: fade-in 1s;
 	animation-duration: 1s
 }
-
-#page {
-	background-image: url(/sd.png);
-	background-position: right bottom;
-	background-repeat: no-repeat
-}
