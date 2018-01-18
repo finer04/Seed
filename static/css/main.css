@@ -34,10 +34,6 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
 	display: block
 }
 
-ol,ul {
-	list-style: none
-}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0
@@ -320,9 +316,6 @@ input[disabled] {
 	padding-bottom: 20px
 }
 
-.grap ol,.grap p,.grap ul {
-	margin-bottom: 20px
-}
 
 .grap .wp-caption,.grap p.with-img {
 	margin-left: -60px;
@@ -337,33 +330,14 @@ input[disabled] {
 	font-style: italic
 }
 
-.grap li {
-	margin-left: 30px;
-	margin-bottom: 12px;
-	padding-top: 2px
-}
 
-.grap li:before {
-	content: "脙茠脝鈥櫭冣€毭偮⒚兤捗偮⒚兟⒚⑩€毬吢∶冣€毭偮兤捗⑩偓拧脙鈥毭偮�";
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	font-size: 14px;
-	margin-left: -58px;
-	padding-right: 15px;
-	display: inline-block;
-	text-align: right;
-	width: 58px
-}
+
 
 .grap ol {
 	counter-reset: post
 }
 
-.grap ol>li:before {
-	content: counter(post,decimal) ".";
-	counter-increment: post;
-	padding-right: 12px
-}
+
 
 .grap h3 {
 	color: rgba(0,0,0,.44);
