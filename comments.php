@@ -16,42 +16,42 @@
         <div class="cancel-comment-reply">
         <?php $comments->cancelReply(); ?>
         </div>
-    
     	<h3 id="response" class="comment-reply-title"><?php _e('添加新评论'); ?></h3>
       <div class="comment-r">
     	    <p class="comment-form-comment">
 
 <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" class="comment-form" role="form">
+<div class="container">
             <?php if($this->user->hasLogin()): ?>
     		<p><?php _e('登录身份: '); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
             <?php else: ?>
-			<div class="form-group">
+			<div class="col-xs-5">
     		<p class="comment-form-author">
             <label for="author"><?php _e('称呼'); ?> <span class="required">*</span></label>
     			<input type="text" name="author" id="author" class="form-control" placeholder="Enter your name" value="<?php $this->remember('author'); ?>" required />
 			</p>
 			</div>
-			<div class="form-group">
+			<div class="col-xs-5">
     		<p class="comment-form-email">
                 <label for="mail"><?php _e('Email'); ?> <span class="required">*</span></label>
     			<input type="email" name="mail" id="mail" class="form-control" placeholder="Enter email" value="<?php $this->remember('mail'); ?>"<?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?> />
     		</p>
 			</div>
-			<div class="form-group">
+			<div class="col-xs-5">
     		<p class="comment-form-url">
                 <label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>
     			<input type="url" name="url" id="url" class="form-control" placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
     		</p>
 			</div>
             <?php endif; ?>
-			<div class="form-group">
+			<div class="form-group" style="margin:10px 0;">
                 <label for="textarea"><?php _e(''); ?></label>
-                <textarea rows="3" name="text" id="textarea" class="form-control" required ><?php $this->remember('text'); ?></textarea>
+                <textarea rows="8" name="text" id="textarea" class="form-control" placeholder="Write something..." required ><?php $this->remember('text'); ?></textarea>
             </p>
 			 </div>
-    		<p class="form-submit">
-                <button type="submit" class="submit btn btn-primary"><?php _e('提交评论'); ?></button>
-            </p>
+    		
+                <button type="submit" class="submit btn btn-primary btn-lg btn-block"><?php _e('提交评论'); ?></button>
+            </div>
     	</form>
     </div>
 </div>
