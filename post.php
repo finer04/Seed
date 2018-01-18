@@ -6,7 +6,7 @@
 .grap {padding-top: 20px;}
 @media (max-width: 600px)
 {.main-content {padding-left:30px;padding-right:30px;}}
-.site-header {background-image: url(https://finer04-cos.b0.upaiyun.com<?php Fimg_Plugin::showfimg($this->cid,1);?>!/gaussblur/2x2);}
+.site-header {background-image: url(<?php showThumbnail($this); ?>);}
 </style>
 
 <main class="main-content">

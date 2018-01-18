@@ -8,6 +8,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
+
 <main class="main-content">
     <section class="blockGroup">
         <?php while($this->next()): ?>
@@ -25,8 +26,9 @@ $this->need('header.php');
                 <a href="<?php $this->permalink() ?>" class="continueread">继续阅读</a>
             </article>
         <?php endwhile; ?>
+		
     </section>
     <?php $this->pageNav('<', '>'); ?>
-</main>
+	</main>
 
 <?php $this->need('footer.php'); ?>

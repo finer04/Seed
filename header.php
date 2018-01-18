@@ -14,11 +14,10 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-  <link rel="stylesheet" href="static/css/main.css">
-  <link rel="stylesheet" href="static/css/my.css">
+	 <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/usr/themes/Puma-typecho/static/css/main.css">
   <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
-
 
 
     <!--[if lt IE 9]>
@@ -32,21 +31,22 @@
 <body <?php if ( $this->is('post') ) echo ' class="single"' ?> >
 <div id="page">
 <div class="headerx animated slideInDown" data-wow-duration="0.9s">
-      <header class="site-header hasImage">
-        <div class="navheader">
-        <p class="site-title">
-            <a title="" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
-        </p>
-        <nav id="nav-menu" class="topNav u-textAlignCenter" role="navigation" style="position: absolute;top: 0px;right: 0;">
-        <ul id="menu-%e8%8f%9c%e5%8d%951" class="topNav-items">
-            <li class="menu-item<?php if($this->is('index')): ?> current-menu-item<?php endif; ?>"> <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
+        <nav id="nav-menu" class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background: -webkit-linear-gradient(bottom,transparent,rgba(0,0,0,.5));">
+		<div class="container">
+		<a title="" class="navbar-brand" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul id="menu-%e8%8f%9c%e5%8d%951" class="navbar-nav ml-auto">
+            <li class="nav-item active<?php if($this->is('index')): ?> <?php endif; ?>"> <a class="nav-link" href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
             <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
             <?php while($category->next()): ?>
-                <li class="menu-item<?php if($this->is('category', $category->slug)): ?> current-menu-item<?php endif; ?>"><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
+                <li class="nav-item active<?php if($this->is('category', $category->slug)): ?> <?php endif; ?>"><a class="nav-link" href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
             <?php endwhile; ?>
         </ul>
+		</div>
+		</div>
     </nav>
-          </div>
+      <header class="site-header hasImage">
+          
       <?php if ( $this->is('post') || $this->is('page') ) : ?>    
       <div class="post-header">
         <h2 class="grap--h2"><?php $this->title() ?></h2>

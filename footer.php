@@ -11,7 +11,8 @@
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 <script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
-<script src="https://finer04-cos.b0.upaiyun.com/gb/lazyload.min.js"></script>
+
+
 
 <script>
 $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])', {
@@ -28,7 +29,6 @@ function() {
 
 });
 </script>
-
 
 <?php $this->footer(); ?>
 <script>new WOW().init();</script>
