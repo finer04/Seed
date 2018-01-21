@@ -2,7 +2,7 @@
 /**
  * @package Puma Depth-modify
  * @author Bigfa
- * @version 1.0.4
+ * @version 1.0.4 (makai ver)
  * @link http://fatesinger.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -10,20 +10,24 @@ $this->need('header.php');
 ?>
 
 <main class="main-content">
-    <section class="blockGroup">
+    <section class="container">
         <?php while($this->next()): ?>
-            <article class="block block--inset block--list wow zoomIn" itemscope itemtype="http://schema.org/BlogPosting" >
-                <h2 class="block-title post-featured" itemprop="headline">
-                    <a href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
-                </h2>
-                <div class="block-postMetaWrap u-textAlignCenter">
-                    <time><?php $this->date('Y/m/d'); ?></time>
-                    <?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?>
-                </div>
-                <div class="post-content grap" itemprop="articleBody">
-                    <?php $this->excerpt(200, '...'); ?>
-                </div>
-                <a href="<?php $this->permalink() ?>" class="continueread">继续阅读</a>
+            <article class="block block--list wow zoomIn" itemscope itemtype="http://schema.org/BlogPosting" >
+					<div class="row">
+						<div class="col-sm-12">
+						<small style="color: #dcdada;"><?php $this->date('F j, Y'); ?> / </small>
+						<small class="text-muted"><?php $this->category(','); ?></small>
+					<h2 itemprop="headline"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2> 
+					</div></div>	
+						<div class="row">
+                <div class="col-md-12" itemprop="articleBody">
+                    <?php $this->excerpt(240, '...'); ?>
+                </div></div>
+				<div class="row">
+				<div class="col-md-2 block-postMetaWrap">
+				<?php echo $this->author->gravatar(32);?><?php $this->author(); ?>
+				</div>
+                </div>				
             </article>
         <?php endwhile; ?>
 		

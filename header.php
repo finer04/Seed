@@ -14,11 +14,10 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-	 <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/usr/themes/Puma-typecho/static/css/main.css">
+<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('static/css/main.css'); ?>">
   <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
-
 
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
