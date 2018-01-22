@@ -20,6 +20,14 @@ function timer_stop( $display = 0, $precision = 3 ) {
   return $r;
 }
 
+function themeInit($archive)
+{ 
+    if ($archive->is('post') || $archive->is('page')) {
+        $archive->content = preg_replace('#<img(.*?) src="(.*?)" (.*?)>#',
+        '<img$1 data-original="$2" class="lazy" $3>', $archive->content);
+    }
+}
+
 function showThumbnail($widget) {
 $attach = $widget->attachments(1)->attachment;
 $pattern = '/\<img.*?src\=\"(.*?)\"[^>]*>/i';
