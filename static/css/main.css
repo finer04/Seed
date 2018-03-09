@@ -90,14 +90,12 @@ pre:after,pre:before {
 	color: #2f76bb
 }
 
-
-
 pre:before {
-	content: "-- 开始 --"
+	content: "-- start --"
 }
 
 pre:after {
-	content: "-- 结束 --";
+	content: "-- end --";
 	text-align: right
 }
 
@@ -320,6 +318,7 @@ input[disabled] {
 	padding-bottom: 20px
 }
 
+.grap p {text-indent: 0.3em;}
 
 .grap .wp-caption,.grap p.with-img {
 	margin-left: -60px;
@@ -334,20 +333,13 @@ input[disabled] {
 	font-style: italic
 }
 
-
-
-
 .grap ol {
 	counter-reset: post
 }
 
-
-
 .grap h3 {
-	color: rgba(0,0,0,.44);
-	font-size: 20px;
 	margin-top: 30px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
 }
 
 .grap hr {

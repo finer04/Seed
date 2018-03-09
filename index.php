@@ -16,7 +16,8 @@ $this->need('header.php');
 					<div class="row">
 						<div class="col-sm-12">
 						<small style="color: #dcdada;"><?php $this->date('F j, Y'); ?> / </small>
-						<small class="text-muted"><?php $this->category(','); ?></small>
+						<small class="text-muted"><?php $this->category(','); ?> / </small>
+						<small class="text-muted"><?php $this->commentsNum(_t('暂无评论'), _t('仅有 1 条评论'), _t('有 %d 条评论')); ?></small>
 					<h2 itemprop="headline"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2> 
 					</div></div>	
 						<div class="row">
@@ -24,7 +25,7 @@ $this->need('header.php');
                     <?php $this->excerpt(240, '...'); ?>
                 </div></div>
 				<div class="row">
-				<div class="col-md-2 block-postMetaWrap">
+				<div class="col-md-6 block-postMetaWrap">
 				<?php echo $this->author->gravatar(32);?><?php $this->author(); ?>
 				</div>
                 </div>				
