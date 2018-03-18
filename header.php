@@ -29,7 +29,7 @@
 </head>
 <body <?php if ( $this->is('post') ) echo ' class="single"' ?> >
 <div id="page">
-<div class="headerx animated slideInDown" data-wow-duration="0.9s">
+
         <nav id="nav-menu" class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" style="background: -webkit-linear-gradient(bottom,transparent,rgba(0,0,0,.5));">
 		<div class="container">
 		<a title="" class="navbar-brand" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
@@ -44,7 +44,7 @@
 		</div>
 		</div>
     </nav>
-      <header class="site-header hasImage">
+      <header class="site-header hasImage wow slideInDown">
           
       <?php if ( $this->is('post') || $this->is('page') ) : ?>    
       <div class="post-header">
@@ -56,7 +56,7 @@
     </div>
     </header>
             <?php endif;?>
-        </div>
+       
 
 
  <div class="surface-content">

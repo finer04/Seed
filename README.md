@@ -12,3 +12,4 @@
 - 响应式
 - SmoothScroll 平滑滚动
 - 完善原主题的一些问题
+- headroom.js

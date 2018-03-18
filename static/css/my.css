@@ -9,7 +9,6 @@ body {
 	background-color: #ddd
 }
 
-
 .surface-content {
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -111,6 +110,8 @@ body {
 	background-color: #FFF;
 	-webkit-border-radius: 0
 }
+
+.grap p {text-indent: 0.3em;}
 
 ::-webkit-scrollbar {
 	width: 5px;

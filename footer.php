@@ -17,6 +17,8 @@
 <script src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
 <script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script src="https://cdn.bootcss.com/headroom/0.9.4/headroom.min.js"></script>
+<script src="https://cdn.bootcss.com/headroom/0.9.4/jQuery.headroom.min.js"></script>
 
 <script>
 $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])', {
@@ -29,13 +31,14 @@ function() {
 
 }).on('pjax:complete',
 function() {
-   $("#loading").fadeOut(600);
-$("img.lazy").lazyload({effect:"fadeIn"});
-
+	$("#loading").fadeOut(600);
+	$("img.lazy").lazyload({effect:"fadeIn"});
+	$(".navbar").headroom(); 
 });
 </script>
 
 <?php $this->footer(); ?>
+<script> $(".navbar").headroom(); </script>
 <script>
 new WOW().init();
 $(function() {

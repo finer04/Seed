@@ -170,7 +170,9 @@ input[disabled] {
 	background-image: url(https://finer04-cos.b0.upaiyun.com/yourname.jpg);
 	box-sizing: border-box;
 	color: rgba(0,0,0,.8);
-	 box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 2px 8px rgba(0,0,0,.12);
+	box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 2px 8px rgba(0,0,0,.12);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .site-header .avatar {
@@ -948,3 +950,7 @@ input[disabled] {
 	margin-left: 15%;
 	color: #FFF;
 }
+
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--pinned{transform:translateY(0)}
+.headroom--unpinned{transform:translateY(-100%)}
