@@ -162,7 +162,7 @@ input[disabled] {
 
 .site-header {
 	padding: 32vh 0px;
-	background-position: center center;
+	background-position: top center;
 	background-size: cover;
 	background-origin: border-box;
 	background-color: #f0f0f0;
@@ -171,7 +171,7 @@ input[disabled] {
 	box-sizing: border-box;
 	color: rgba(0,0,0,.8);
 	box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 2px 8px rgba(0,0,0,.12);
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -181,24 +181,12 @@ input[disabled] {
 	box-shadow: 0 0 0 1px rgba(255,255,255,.8)
 }
 
-.site-header:before {
-	content: "";
-	background-color: rgba(0,0,0,.1);
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0
-}
+
 
 @media (max-width:600px) {
 	.site-header {
 		padding: 20vh 0
 	}
-}
-
-.site-header.hasImage {
-	color: rgba(255,255,255,.97)
 }
 
 .site-title {
@@ -287,6 +275,7 @@ input[disabled] {
 	margin-bottom: 32px;
 	background-color: #ffffff;
 	box-shadow: 0 2px 2px 0 rgba(160,160,160,.16), 0 1px 5px 0 rgba(160,160,160,.16);
+    border-radius: 7px;
 }
 
 .block--list .block-title {

@@ -26,7 +26,7 @@ $this->need('header.php');
                 </div></div>
 				<div class="row">
 				<div class="col-md-6 block-postMetaWrap">
-				<?php echo $this->author->gravatar(32);?><?php $this->author(); ?>
+				<a href="<?php $this->permalink() ?>">read more...</a>
 				</div>
                 </div>				
             </article>

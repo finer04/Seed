@@ -34,6 +34,7 @@ function() {
 	$("#loading").fadeOut(600);
 	$("img.lazy").lazyload({effect:"fadeIn"});
 	$(".navbar").headroom(); 
+	$("table").addClass("table table-hover");
 });
 </script>
 
@@ -48,6 +49,10 @@ $(function() {
     });
 });
 </script>
+<script>
+$(document).ready(function(){
+    $("table").addClass("table table-hover");
+});</script>
 
 <div id="loading" >
 	<div id="loading-center">
