@@ -1,9 +1,9 @@
 <?php
 /**
- * @package Puma Depth-modify
- * @author Bigfa
- * @version 1.0.4 (makai ver)
- * @link http://fatesinger.com
+ * @package Seed
+ * @author Finer04
+ * @version 1.0.7
+ * @link https://fil.fi
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');

@@ -44,7 +44,7 @@
 		</div>
 		</div>
     </nav>
-      <header class="site-header hasImage wow slideInDown">
+      <header class="site-header animated slideInDown">
           
       <?php if ( $this->is('post') || $this->is('page') ) : ?>    
       <div class="post-header">
